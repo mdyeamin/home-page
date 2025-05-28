@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/fab.png" type="image/x-icon">
+    <title>Enthrall</title>
 </head>
-<body>
-    
+
+<body class="bg-primary-bg">
+
+    <!-- header section start -->
+    <header class="">
+        <!-- nav start  -->
+        <div class="w-10/12 mx-auto bg-white h-16 my-3 rounded-2xl px-2 shadow-md">
+            <div class="h-full flex justify-between items-center ">
+                <div class="">
+                    <img class="w-40" src="images/logo.png" alt="">
+                </div>
+                <!-- navigations  -->
+                <nav>
+                    <ul class="flex items-center gap-5 text-dark-gray font-normal">
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li>Courses</li>
+                        </a>
+                        <a href="">
+                            <li>Events</li>
+                        </a>
+                        <a href="">
+                            <li>Mentors</li>
+                        </a>
+                        <a href="">
+                            <li>Alumni</li>
+                        </a>
+                        <a href="">
+                            <li>Payments</li>
+                        </a>
+                        <a href="">
+                            <li>About</li>
+                        </a>
+                    </ul>
+                </nav>
+                <!-- navigations  -->
+                <div class="flex items-center gap-5 font-normal">
+                    <button
+                        class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-3 px-6 rounded-lg ">
+                        Login/Sighup <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- nav end  -->
+        <!-- hero section start -->
+        <section class="w-10/12 h-screen mx-auto">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-6">
+                    <div class="h-96 flex items-center text-left">
+                        <div class="">
+                            <div class="">
+                                <h1 class="text-6xl font-bold leading-15">Tired Of Theory?<br>
+                                    Learn What <br>
+                                    <span class="text-clifford">Works.</span>
+                                </h1>
+                            </div>
+                            <div class=" my-5 text-[#595454]">
+                                <p>Entrallit Is Where Hustle Meets Structure. Learn From Experts. <br>
+                                    Solve Real Problems. Get Job-Ready - And Stay Ahead Of The Curve.</p>
+                            </div>
+                            <!-- entollment  -->
+                            <div class=" flex gap-x-5 items-center mt-5">
+                                <button
+                                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded">
+                                    Next
+                                </button>
+                                <button
+                                    class="bg-white hover:bg-dark-gray border text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded">
+                                    Previous
+                                </button>
+                            </div>
+                            <!-- enrollment -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    2
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+    </header>
+    <!-- header section end -->
+    <script src="index.js"></script>
 </body>
+
 </html>
