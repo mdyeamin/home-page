@@ -13,9 +13,21 @@
         --color-dark-gray: #132022;
         --color-yellow: #fbcd13
       }
+
+      /* own custom css  */
+      .main-price{
+    text-decoration: line-through red;
+      }
+    .pricing{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    margin-left: 5px;
+    }
     </style>
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/fab.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Enthrall</title>
 </head>
 
@@ -148,25 +160,93 @@
                             </div>
                         </div>
                         <div class="">
-                            <h2 class="text-xl font-semibold my-5 ">Business Analys <br> Bootcamp</h2>
+                            <h2 class="text-xl font-bold my-8 ">Business Analys <br> Bootcamp</h2>
                         </div>
                         <!-- <p class="text-gray-600 mt-2">Learn to build dynamic websites and web applications using HTML, CSS,
                         JavaScript, and more.</p> -->
-                        <div class="flex items-center justify-between w-full border border-primary-bg h-12 rounded-md">
-                            <div class="">
-                                <span class="discount-price">$2500</span>
-                                <p>$2000</p>
+                        <div class="flex items-center justify-between w-full border border-primary-bg h-10 rounded-md">
+                            <div class="pricing">
+                                <span class="main-price text-sm">$2500</span>
+                                <p class="final-price">$2000</p>
                             </div>
                             <div class="h-full">
                                 <button
                                     class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-4 rounded">
-                                    Enroll Now <i class="fa-solid fa-arrow-right fa-fade"></i>
+                                    See Details <i class="fa-solid fa-arrow-right fa-fade"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- course card 2 -->
+                <div class=" col-span-4 gap-5 mt-10">
+                    <div class="bg-white p-5 rounded-lg shadow-md">
+                        <div class="">
+                            <div class="">
+                                <img class="w-full h-40 object-cover rounded-lg" src="images/EngineeringVehicleTestingSolutionsLtd.jpg"
+                                    alt="Web Development">
+                            </div>
+                            <div class="">
+                                <span class="text-xs border border-primary-bg bg-primary-bg rounded-md px-1">Class
+                                    start: Sept 2, 2023</span>
+                                <span class="text-xs border border-primary-bg bg-primary-bg rounded-md px-1">10 Seats
+                                    Left</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h2 class="text-xl font-bold my-8 ">vehicle test <br> engineering</h2>
+                        </div>
+                        <!-- <p class="text-gray-600 mt-2">Learn to build dynamic websites and web applications using HTML, CSS,
+                        JavaScript, and more.</p> -->
+                        <div class="flex items-center justify-between w-full border border-primary-bg h-10 rounded-md">
+                            <div class="pricing">
+                                <span class="main-price text-sm">$2500</span>
+                                <p class="final-price">$2000</p>
+                            </div>
+                            <div class="h-full">
+                                <button
+                                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-4 rounded">
+                                    See Details <i class="fa-solid fa-arrow-right fa-fade"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- course card 3 -->
+                <div class=" col-span-4 gap-5 mt-10">
+                    <div class="bg-white p-5 rounded-lg shadow-md">
+                        <div class="">
+                            <div class="">
+                                <img class="w-full h-40 object-cover rounded-lg" src="images/softwaretestautomationengineering(java).jpg"
+                                    alt="Web Development">
+                            </div>
+                            <div class="">
+                                <span class="text-xs border border-primary-bg bg-primary-bg rounded-md px-1">Class
+                                    start: Sept 2, 2023</span>
+                                <span class="text-xs border border-primary-bg bg-primary-bg rounded-md px-1">10 Seats
+                                    Left</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h2 class="text-xl font-bold my-8 ">software test automation <br> engineering (java)</h2>
+                        </div>
+                        <!-- <p class="text-gray-600 mt-2">Learn to build dynamic websites and web applications using HTML, CSS,
+                        JavaScript, and more.</p> -->
+                        <div class="flex items-center justify-between w-full border border-primary-bg h-10 rounded-md">
+                            <div class="pricing">
+                                <span class="main-price text-sm">$2500</span>
+                                <p class="final-price">$2000</p>
+                            </div>
+                            <div class="h-full">
+                                <button
+                                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-4 rounded">
+                                    See Details <i class="fa-solid fa-arrow-right fa-fade"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
     </section>
     <!-- skills learning course end -->
