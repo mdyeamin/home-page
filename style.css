@@ -8,7 +8,7 @@
     line-height: 10px;
     margin-left: 5px;
     }
-    
+
 .guider-card:hover .guider-name{
 display: hidden;
 transition: all 3s ease-in-out;
@@ -36,6 +36,6 @@ transition: all 3s ease-in-out;
 }
 
 .content > *{
-    transform: translateY(25px);
+    /* transform: translateY(25px); */
     transition: all 0.5s ease-in-out;
 }
