@@ -1,0 +1,41 @@
+ /* own custom css  */
+      .main-price{
+    text-decoration: line-through red;
+      }
+    .pricing{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    margin-left: 5px;
+    }
+    
+.guider-card:hover .guider-name{
+display: hidden;
+transition: all 3s ease-in-out;
+}
+
+
+.content{
+    opacity: 0;
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #132022;
+    transition: all 0.5s ease-in-out;
+
+}
+.content:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.content > *{
+    transform: translateY(25px);
+    transition: all 0.5s ease-in-out;
+}
