@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+
+     
+/* express card  */
+
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/fab.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- daisyUI  cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <title>Enthrall</title>
+</head>
+
+<body class="bg-primary-bg">
+
+    <!-- header section start -->
+    <header class="">
+        <!-- nav start  -->
+
+        <div class="navbar bg-base-100 shadow-md lg:w-10/12 mx-auto rounded-2xl">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="courses.html">Courses</a>
+                            <!-- <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="mentors.html">Mentors</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <div class="">
+                        <img class="lg:w-40 max-md:w-32" src="images/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="courses.html">Courses</a>
+                        <!-- <details>
+                            <summary>Courses</summary>
+                            <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul>
+                        </details> -->
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow lg:py-3 max-md:py-3 lg:px-6 max-md:px-3 rounded-lg max-md:text-sm">
+                    Login/Signup <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                </button>
+            </div>
+        </div>
+        <!-- nav end  -->
+    </header>
+    <!-- header section end -->
+
+
+
+    <!-- From Learners To Leaders start  -->
+    <section class="w-10/12 h-auto mx-auto mt-20">
+        <div class="">
+            <div class="text-center">
+                <h1 class="lg:text-4xl max-md:text-2xl font-bold text-dark-gray">From Learners To Leaders</h1>
+                <p class="text-[#595454] mt-2">Our Learners Don't Just Finish Courses-They Move Forward With Confidence,
+                    Skills, And Success. Here's A Glimpse Into The Journeys Of Those Who Once Started Right Where You
+                    Are.</p>
+            </div>
+
+            <!-- Guided By Experts. cards start  -->
+            <div class="">
+                <div class="grid grid-cols-12 gap-5 mt-10">
+                    <!-- Guided card 1 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Guided card 2 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Guided card 3 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Guided card 4 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Guided card 5 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Guided card 6 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Guided card 7 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Guided card 8 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Guided card 9 -->
+                    <div class="relative overflow-hidden lg:col-span-4 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                        <div class="h-[460px] w-[367] bg-yellow rounded-lg shadow-lg ">
+                            <div class="">
+                                <div class=" ">
+                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
+                                        src="images/tofayelvai.png" alt="Web Development">
+                                    <div
+                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
+                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                    </div>
+                                    <div class="content text-white text-center rounded-lg">
+                                        <div class="">
+                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                        </div>
+                                        <div class="my-5">
+                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Guided By Experts. cards end -->
+            <!-- Guided By Experts. end -->
+    </section>
+    <!-- From Learners To Leaders end  -->
+    <!-- What Our Students Say start  -->
+
+    <section class="bg-yellow py-10 my-10">
+        <div class="w-10/12 h-auto mx-auto">
+            <div class="">
+                <h1 class="lg:text-4xl max-md:text-2xl font-bold text-dark-gray text-center">What Our Students Say</h1>
+                <p class="text-center text-[#595454] mt-2">Our Students Speak For Us. Read What They Have To Say About
+                    Their Learning Experience With Entrallit.</p>
+            </div>
+
+
+            <div class="grid grid-cols-12 gap-5 my-10">
+                <!-- students reviews 1 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- students reviews 2 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- students reviews 3 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- students reviews 4 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- students reviews 5 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- students reviews 6 -->
+                <div class="lg:col-span-4 max-md:col-span-12">
+                    <div class="bg-white rounded-2xl shadow-lg lg:py-5 max-md:py-3 lg:px-10 max-md:px-3 h-fit">
+                        <div class=" my-1">
+                            <i class="fa-solid fa-quote-right fa-flip-horizontal text-yellow text-2xl"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-xs text-[#595454]">
+                                I would like to recommend EnthrallIT to anyone who wants to get trained in QA automation
+                                engineering.
+                                Here explanations are clean, clear, and easy to
+                                understand.
+                            </p>
+                        </div>
+                        <!-- student profile  -->
+                        <div class=" flex items-center gap-x-3 mt-5">
+                            <div class=" w-10 ">
+                                <img class="rounded-full" src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-md font-medium leading-4">Rayhan Ahmed <br>
+                                    <span class="text-xs font-light">Student of QA Automation Engineering</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- student profile end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- What Our Students Say end  -->
+ 
+    <!-- Want To Get In Touch start  -->
+
+    <section class="py-14 lg:my-20">
+        <div class="w-10/12 h-auto mx-auto bg-white rounded-xl">
+            <div class="grid grid-cols-12 gap-5 lg:p-10 max-md:p-3 ">
+
+                <div class="lg:col-span-6 max-md:col-span-12 h-full flex">
+                    <div class=" ">
+                        <h1 class="lg:text-4xl max-md:text-2xl font-bold text-dark-gray leading-10 my-5">
+                            Want To Get <br> In Touch?
+                        </h1>
+                        <p class="text-sm font-light">We'd Love To Hear From You. You Can Reach Us <br> Via The
+                            Following Contact Details.</p>
+
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-6 max-md:col-span-12 h-full  flex flex-col items-center justify-center space-y-5">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Name" id="">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Email" id="">
+                    <input class="border-0 bg-primary-bg w-full h-20 px-5 py-3 rounded-lg  outline-none" type="text"
+                        name="" placeholder="Message" id="">
+                    <div class=" mt-2 w-full">
+                        <button
+                            class="w-full bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded transition duration-300">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Want To Get In Touch end  -->
+    <!-- footer  -->
+    <footer class="">
+
+        <section class="bg-dark-gray py-14">
+            <div class="w-10/12 mx-auto">
+                <div class="grid grid-cols-12 h-80 gap-5">
+
+                    <div class="lg:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col justify-around ">
+                            <div class="">
+                                <img class="w-60" src="images/white-logo.png" alt="">
+                            </div>
+                            <div class="text-white">
+                                <p><i class="fa-solid fa-phone-volume text-yellow"></i>&nbsp; +1929-301-6028 </p>
+                                <p><i class="fa-solid fa-envelope text-yellow"></i> &nbsp;info@enthrallit.com</p>
+                                <p><i class="fa-solid fa-briefcase text-yellow"></i>&nbsp; 625W 57th St, New York, NY
+                                    10019
+                                </p>
+                            </div>
+                            <div class="">
+                                <i class="text-white mx-3 text-2xl fa-brands fa-instagram"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                <i class="text-white mx-3 text-2xl fa-solid fa-envelope"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col items-end justify-around ">
+                            <nav>
+                                <ul
+                                    class="flex items-center lg:gap-5 max-md:gap-2 text-white font-normal max-md:text-[10px]">
+                                    <a href="">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="courses.html">
+                                        <li>Courses</li>
+                                    </a>
+                                    <a href="events.html">
+                                        <li>Events</li>
+                                    </a>
+                                    <a href="mentors.html">
+                                        <li>Mentors</li>
+                                    </a>
+                                    <a href="alumni.html">
+                                        <li>Alumni</li>
+                                    </a>
+                                    <a href="payments.html">
+                                        <li>Payments</li>
+                                    </a>
+                                    <a href="about.html">
+                                        <li>About</li>
+                                    </a>
+                                </ul>
+                            </nav>
+                            <div class=""></div>
+                            <div class="">
+                                <p class="text-yellow"> <span>copyright @Entrall IT 2025</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
