@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- fontawesome cdn  -->
-   <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
   <!-- custom css -->
   <style type="text/tailwindcss">
     @theme {
@@ -40,20 +40,20 @@
     <!-- Sidebar -->
     <div id="sidebar"
       class="bg-white w-48 p-4 space-y-3 shadow-md md:block hidden fixed md:relative z-10 h-full rounded-2xl">
-      <h2 class="text-2xl font-bold text-dark-gray mb-6"><a href="#"></a>Dashboard</h2>
+      <h2 class="text-2xl font-bold text-dark-gray mb-6"><a href="#"></a><i class="fa-solid fa-table-columns"></i> Dashboard</h2>
       <nav class="space-y-2">
 
         <button onclick="loadPage('courses')"
-          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Add
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black"><i class="fa-regular mr-1 fa-square-plus"></i> Add
           Courses</button>
         <button onclick="loadPage('quiz')"
-          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Quiz
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black"><i class="fa-solid mr-1 fa-bars"></i> Quiz
           List</button>
         <button onclick="loadPage('homework')"
-          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Home
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black"><i class="fa-regular mr-1 fa-book-open"></i> Home
           Work</button>
         <button onclick="loadPage('challenge')"
-          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Challenge</button>
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black"><i class="fa-solid mr-1 fa-code"></i> Challenge</button>
         <button onclick="loadPage('exam')"
           class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Exam</button>
         <button onclick="loadPage('resources')"
@@ -65,6 +65,28 @@
         <button onclick="loadPage('schedule')"
           class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">Class
           Schedule</button>
+          <!-- super user data  -->
+        <button onclick="loadPage('super_user_quiz')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Quiz List</button>
+        <button onclick="loadPage('super_user_home_work')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Home Work</button>
+        <button onclick="loadPage('super_user_challenge')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Challenge</button>
+        <button onclick="loadPage('super_user_exam')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Exam</button>
+        <button onclick="loadPage('super_user_bootcamp')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Bootcamp</button>
+        <button onclick="loadPage('super_user_others')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Others</button>
+        <button onclick="loadPage('super_user_join_class')"
+          class="toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+          Join The Class</button>
       </nav>
     </div>
 
@@ -102,7 +124,8 @@
         <h2 class="my-5 text-lg font-bold">My Courses</h2>
         <div class="grid grid-cols-12 gap-5">
           <!-- class 1  -->
-          <div class="col-span-6 max-md:col-span-12 bg-white rounded-lg shadow-lg lg:p-4 max-md:p-2 border-2 border-white hover:border-yellow border-rounded-lg transition-all duration-300 bg-linear-to-tr-bl from-yellow-100 to-white hover:bg-gradient-to-tr hover:shadow-xl">
+          <div
+            class="col-span-6 max-md:col-span-12 bg-white rounded-lg shadow-lg lg:p-4 max-md:p-2 border-2 border-white hover:border-yellow border-rounded-lg transition-all duration-300 bg-linear-to-tr-bl from-yellow-100 to-white hover:bg-gradient-to-tr hover:shadow-xl">
             <div class=" w-full h-full grid grid-cols-12 mx-auto gap-5">
               <div class="col-span-6 max-md:col-span-12 flex items-center justify-center">
                 <img class="h-full w-full object-cover rounded-md" src="images/computer.jpg" alt="">
@@ -122,7 +145,8 @@
             </div>
           </div>
           <!-- class 2  -->
-          <div class="col-span-6 max-md:col-span-12 bg-white rounded-lg shadow-lg lg:p-4 max-md:p-2 border-2 border-white hover:border-yellow border-rounded-lg transition-all duration-300 bg-linear-to-tr-bl from-yellow-100 to-white hover:bg-gradient-to-tr hover:shadow-xl">
+          <div
+            class="col-span-6 max-md:col-span-12 bg-white rounded-lg shadow-lg lg:p-4 max-md:p-2 border-2 border-white hover:border-yellow border-rounded-lg transition-all duration-300 bg-linear-to-tr-bl from-yellow-100 to-white hover:bg-gradient-to-tr hover:shadow-xl">
             <div class=" w-full h-full grid grid-cols-12 mx-auto gap-5">
               <div class="col-span-6 max-md:col-span-12 flex items-center justify-center">
                 <img class="h-full w-full object-cover rounded-md" src="images/computer.jpg" alt="">
@@ -190,6 +214,29 @@
         courses: `
           <div>
             <h1 class="text-2xl font-bold">Add Courses</h1>
+
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>  
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -361,6 +408,29 @@
         quiz: `
                 <div>
             <h1 class="text-2xl font-bold">Quiz Name</h1>
+
+             <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>         
+            
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -533,6 +603,29 @@
         homework: `
                 <div>
             <h1 class="text-2xl font-bold">Add Home Work</h1>
+
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -704,8 +797,31 @@
         challenge: `
 
  <!-- Challenge Section -->
-<div>
+        <div>
             <h1 class="text-2xl font-bold">Challenge</h1>
+
+          <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -878,6 +994,29 @@
         exam: `
         <div>
             <h1 class="text-2xl font-bold">Exam</h1>
+
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -1051,6 +1190,29 @@
         resources: `
         <div>
             <h1 class="text-2xl font-bold">Resources</h1>
+
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -1224,6 +1386,29 @@
         bootcamp: `
         <div>
             <h1 class="text-2xl font-bold">Bootcamp</h1>
+
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -1397,6 +1582,27 @@
         
         <div>
             <h1 class="text-2xl font-bold">Automation</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -1570,6 +1776,29 @@
         schedule: `
         <div>
             <h1 class="text-2xl font-bold">Schedule</h1>
+
+          <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+
             <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
               <thead class="bg-yellow-300">
                 <tr class="text-sm font-semibold">
@@ -1736,7 +1965,1319 @@
 
             </table>
           </div>
-        `
+        `,
+        
+        
+        
+        // super user dashboard items
+        // user user schedule content  
+        super_user_quiz: `
+        <div>
+            <h1 class="text-2xl font-bold">Quiz List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2  rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Quiz Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+
+        // user user home work  
+        super_user_home_work: `
+        <div>
+            <h1 class="text-2xl font-bold">Home Work List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Home Work Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+        // user user challenge  
+       super_user_challenge: `
+        <div>
+            <h1 class="text-2xl font-bold">Coding Challenge List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Coding Challenge Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+        // user user exam  
+       super_user_exam: `
+        <div>
+            <h1 class="text-2xl font-bold">Exam List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Exam Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+        // user user bootcamp  
+       super_user_bootcamp: `
+        <div>
+            <h1 class="text-2xl font-bold">Bootcamp List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Bootcamp Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+        // user user others  
+       super_user_others: `
+        <div>
+            <h1 class="text-2xl font-bold">Others List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Title</th>
+                  <th class="px-4 py-2">Batch</th>
+                  
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+         
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+          
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+      
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+              
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                    <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">february 2025 enthrall QA Bootcamp Presentation</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                 
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Click</button>
+                   <!-- <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button> -->
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+
+        // user user bootcamp  
+       super_user_join_class: `
+        <div>
+            <h1 class="text-2xl font-bold">Meeting List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Teacher Name</th>
+                  <th class="px-4 py-2">Title</th>
+                  <th class="px-4 py-2">Date</th>
+                  <th class="px-4 py-2">Start Time</th>
+                  <th class="px-4 py-2">End Time</th>
+             
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Upcomming</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2"> 12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Copy</button>
+                   
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Delete</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Copy</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Upcomming</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Delete</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Copy</button>
+
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Upcomming</button>
+                  
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">Tofayel Kabir</td>
+                  <td class="px-4 py-2">interview Full aysha 02</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+                  <td class="px-4 py-2"> 20:30:00</td>
+
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Delete</button>
+                    
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+
       };
 
       document.getElementById('main-content').innerHTML = content[page] || `<h1 class='text-xl font-bold'>Page not found</h1>`;
