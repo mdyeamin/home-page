@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Swiper styles (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style type="text/tailwindcss">
         @theme {
         --color-clifford: #da373d;
@@ -745,12 +748,11 @@
     </section>
     <!-- Online training and support designed for your real life. end -->
     <!-- All-in-one flexible learning experience start  -->
-    <section class="bg-gradient-to-r from-white to-yellow-50 py-12 px-4">
+    <section class="bg-gradient-to-r from-white to-yellow-50 py-12 px-4 md:my-20">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
             <!-- Image -->
             <div class="flex-1">
-                <img src="images/learning.jpg" alt="Coding workspace"
-                    class="w-full h-auto rounded-lg shadow" />
+                <img src="images/learning.jpg" alt="Coding workspace" class="w-full h-auto rounded-lg shadow" />
             </div>
             <!-- Text content -->
             <div class="flex-1 text-center md:text-left">
@@ -770,6 +772,98 @@
     </section>
 
     <!-- All-in-one flexible learning experience end -->
+
+    <!-- 1-on-1 tutoring from industry professionals start  -->
+    <section class=" max-md:p-4 md:p-4 mt-10 lg:mt-20">
+        
+            <div class="max-w-6xl mx-auto">
+                <!-- Heading -->
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-semibold">
+                        1-on-1 tutoring from industry <span class="text-red-500">professionals</span>
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-2">
+                        Learn directly from the pros, with regular 1-on-1 sessions, daily office hours, and a deep
+                        webinar library.
+                    </p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="relative">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="rounded-xl overflow-hidden shadow-md">
+                                    <img src="images/professionals.jpg"
+                                        alt="Max Jemas" class="w-full h-80 object-cover" />
+                                    <div class="p-4 bg-black bg-opacity-60 text-white">
+                                        <h3 class="font-bold">Max Jemas</h3>
+                                        <p class="text-sm">10 years experience</p>
+                                        <p class="text-xs">Senior Software Engineer at Republic</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="rounded-xl overflow-hidden shadow-md">
+                                    <img src="images/professionals.jpg"
+                                        alt="Max Jemas" class="w-full h-80 object-cover" />
+                                    <div class="p-4 bg-black bg-opacity-60 text-white">
+                                        <h3 class="font-bold">Max Jemas</h3>
+                                        <p class="text-sm">10 years experience</p>
+                                        <p class="text-xs">Senior Software Engineer at Republic</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="rounded-xl overflow-hidden shadow-md">
+                                    <img src="images/professionals.jpg"
+                                        alt="Max Jemas" class="w-full h-80 object-cover" />
+                                    <div class="p-4 bg-black bg-opacity-60 text-white">
+                                        <h3 class="font-bold">Max Jemas</h3>
+                                        <p class="text-sm">10 years experience</p>
+                                        <p class="text-xs">Senior Software Engineer at Republic</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="rounded-xl overflow-hidden shadow-md">
+                                    <img src="images/professionals.jpg"
+                                        alt="Max Jemas" class="w-full h-80 object-cover" />
+                                    <div class="p-4 bg-black bg-opacity-60 text-white">
+                                        <h3 class="font-bold">Max Jemas</h3>
+                                        <p class="text-sm">10 years experience</p>
+                                        <p class="text-xs">Senior Software Engineer at Republic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="rounded-xl overflow-hidden shadow-md">
+                                    <img src="images/professionals.jpg"
+                                        alt="Max Jemas" class="w-full h-80 object-cover" />
+                                    <div class="p-4 bg-black bg-opacity-60 text-white">
+                                        <h3 class="font-bold">Max Jemas</h3>
+                                        <p class="text-sm">10 years experience</p>
+                                        <p class="text-xs">Senior Software Engineer at Republic</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more slides if needed -->
+                        </div>
+                        <!-- Swiper navigation -->
+                        <div class="swiper-button-prev text-black"></div>
+                        <div class="swiper-button-next text-black"></div>
+                    </div>
+                </div>
+            </div>
+      
+    </section>
+    <!-- 1-on-1 tutoring from industry professionals end  -->
+
     <!-- Want To Get In Touch start  -->
 
     <section class="py-14 lg:my-20">
@@ -807,7 +901,7 @@
 
     <!-- Want To Get In Touch end  -->
     <!-- footer  -->
-    <footer class="">
+    <footer class="max-w-6xl max-md:p-4 md:p-4 mx-auto mt-10 lg:mt-20">
 
         <section class="bg-dark-gray py-14">
             <div class="max-w-6xl max-md:p-4 md:p-4 mx-auto">
@@ -879,6 +973,26 @@
     <!-- flowbite  -->
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Swiper scripts (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
