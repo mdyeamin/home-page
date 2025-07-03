@@ -15,8 +15,27 @@
       }
 
      
-/* express card  */
-
+/* arrow 1,2,3,new job  */
+.arrow {
+        position: relative;
+        display: inline-block;
+        padding-right: 1.5rem;
+        background-color: #facc15;
+        border-radius: 0.25rem;
+        font-weight: 600;
+      }
+      .arrow::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid #facc15;
+      }
 
 
     </style>
@@ -118,7 +137,7 @@
                         class="flex lg:gap-5 md:gap-5 max-md:gap-2 flex-wrap justify-center lg:justify-start md:justify-start">
                         <button
                             class="text-[8px] lg:text-sm md:text-sm font-semibold bg-white text-black p-2 lg:px-4 md:py-2 rounded-lg hover:bg-black hover:text-white transition duration-300">
-                            9 months per-time
+                            9 months pert-time
                         </button>
                         <button
                             class="text-[8px] lg:text-sm md:text-sm font-semibold bg-white text-black p-2 lg:px-4 md:py-2 rounded-lg hover:bg-black hover:text-white transition duration-300">
@@ -444,7 +463,7 @@
         </div>
 
 
- <!-- Select the pace that fits your Life & Goals -->
+        <!-- Select the pace that fits your Life & Goals -->
 
         <div class=" py-10">
             <div class="max-w-5xl mx-auto text-center">
@@ -483,7 +502,7 @@
                                 <span class="text-yellow-400">✔️</span> Fast-track to a tech career
                             </li>
                         </ul>
-                        
+
                         <button
                             class=" bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold w-full py-2 rounded-lg transition">
                             Upgrade to Full Time
@@ -527,6 +546,84 @@
     </section>
 
     <!-- you after enthrall it end -->
+
+    <!-- how you get a new career start   -->
+    <section class="max-w-6xl max-md:p-4 md:p-4 mx-auto mt-10 lg:mt-20">
+        <div class="bg-gray-100 py-10 px-4">
+            <div class="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg bg-white">
+                <div class="w-full">
+                    <!-- Top Image -->
+                    <img src="images/course-detail-img-3.png" alt="Career Banner"
+                        class="w-full object-cover h-64 md:h-80" />
+                </div>
+                <div class="p-6 text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-8">
+                        How you get a <span class="text-red-500">new career</span>
+                    </h2>
+                    <!-- Steps Timeline -->
+                    <div class="max-md:hidden relative flex items-center justify-between">
+
+                        <!-- horizontal line -->
+                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-yellow-400 transform -translate-y-1/2 z-0">
+                        </div>
+
+                        <!-- step 1 -->
+                        <div class="relative z-10 flex items-center justify-center">
+                            <span class="arrow px-4 py-1">01</span>
+                        </div>
+
+                        <!-- step 2 -->
+                        <div class="relative z-10 flex items-center justify-center">
+                            <span class="arrow px-4 py-1">02</span>
+                        </div>
+
+                        <!-- step 3 -->
+                        <div class="relative z-10 flex items-center justify-center">
+                            <span class="arrow px-4 py-1">03</span>
+                        </div>
+
+                        <!-- new job -->
+                        <div class="relative z-10 flex items-center justify-center">
+                            <span class="bg-yellow-400 px-4 py-1 rounded font-semibold">New Job</span>
+                        </div>
+                    </div>
+
+                    <!-- tell me more area -->
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <!-- Card 1 -->
+                        <div class="flex flex-col items-start md:w-9/12">
+                            <p class="text-gray-800 text-left my-8">Training and support designed for real life.</p>
+                            <button class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500">
+                                Tell Me More
+                            </button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="flex flex-col items-start md:w-9/12">
+                            <p class="text-gray-800 text-left my-8">Training and support designed for real life.</p>
+                            <button class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500">
+                                Tell Me More
+                            </button>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="flex flex-col items-start md:w-9/12">
+                            <p class="text-gray-800  text-left my-8 ">Training and support designed for real life.</p>
+                            <button class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500">
+                                Tell Me More
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- how you get a new career end  -->
 
     <!-- Want To Get In Touch start  -->
 

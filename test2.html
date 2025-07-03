@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steps Timeline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .arrow {
+        position: relative;
+        display: inline-block;
+        padding-right: 1.5rem;
+        background-color: #facc15;
+        border-radius: 0.25rem;
+        font-weight: 600;
+      }
+      .arrow::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 12px solid #facc15;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 p-4">
+    <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow">
+      <div class="relative flex items-center justify-between">
+
+        <!-- horizontal line -->
+        <div class="absolute top-1/2 left-0 right-0 h-1 bg-yellow-400 transform -translate-y-1/2 z-0"></div>
+
+        <!-- step 1 -->
+        <div class="relative z-10 flex items-center justify-center">
+          <span class="arrow px-4 py-1">01</span>
+        </div>
+
+        <!-- step 2 -->
+        <div class="relative z-10 flex items-center justify-center">
+          <span class="arrow px-4 py-1">02</span>
+        </div>
+
+        <!-- step 3 -->
+        <div class="relative z-10 flex items-center justify-center">
+          <span class="arrow px-4 py-1">03</span>
+        </div>
+
+        <!-- new job -->
+        <div class="relative z-10 flex items-center justify-center">
+          <span class="bg-yellow-400 px-4 py-1 rounded font-semibold">New Job</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
