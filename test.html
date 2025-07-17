@@ -1,0 +1,309 @@
+<!-- Accordion for small device -->
+<div class="grid grid-cols-12 gap-5 mt-10">
+
+    <!-- Accordion Item 1-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Those who started early: Enrolled before the start
+                        of classes</h2>
+                    <span class="inline-block bg-[#E6EEFD] text-[#0354EB] px-3 py-1 text-sm rounded mt-1">Module
+                        01</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion Item 2-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <!-- Accordion Item 3-->
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Working with Data, Control Flow & Data Structures
+                    </h2>
+                    <span class="inline-block bg-[#E6EEFD] text-[#0354EB] px-3 py-1 text-sm rounded mt-1">Module
+                        03</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Accordion Item 3-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <!-- Accordion Item 3-->
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Object Oriented Programming</h2>
+                    <span class="inline-block bg-[#E6EEFD] text-[#0354EB] px-3 py-1 text-sm rounded mt-1">Module
+                        05</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Accordion Item 4-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <!-- Accordion Item 4-->
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Run Your First Code</h2>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 text-sm rounded mt-1">Module
+                        02</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Accordion Item 5-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <!-- Accordion Item 5-->
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Function , File Handling & Error Handling</h2>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 text-sm rounded mt-1">Module
+                        04</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Accordion Item 6-->
+    <div class="col-span-12 md:col-span-6 space-y-5">
+        <!-- Accordion Item 6-->
+        <div x-data="{ open: false, height: 0 }" class=" rounded-lg p-4 shadow-md">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-base">Exploring Modules, JSON, Datetime</h2>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 text-sm rounded mt-1">Module
+                        06</span>
+                </div>
+                <!-- Toggle Button -->
+                <button @click="open = !open; $nextTick(() => height = $refs.content.scrollHeight)"
+                    :class="open ? 'bg-black text-yellow-400' : 'bg-white text-black'"
+                    class="border border-black rounded-full p-2 transition-all duration-300">
+                    <svg :class="open ? 'rotate-180 text-yellow-400' : 'rotate-0 text-black'"
+                        class="w-5 h-5 transition-transform duration-500 ease-in-out" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.093l3.71-3.86a.75.75 0 011.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.25-4.4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Animated Content -->
+            <div x-ref="content" x-bind:style="open ? 'max-height:' + height + 'px' : 'max-height:0px'"
+                class="overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="mt-4 text-sm leading-relaxed">
+                    <!-- Stats -->
+                    <div class="flex gap-4 mt-4">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">40 recorded video</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Live Class</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded text-sm">1 Quiz</span>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 mt-3">Class 1: Web Essentials</h3>
+                    <p class="text-gray-700">
+                        What is the web? | What are web servers? | How does a web application work? |
+                        What is the Internet and intranet? | Front-end and back-end development. |
+                        How data is accessed and shared via browsers | Server computers, client computers,
+                        and their communication. |
+                        Browsers and their functionalities. | Request-Response Model and how it works. |
+                        Databases and database servers | Static vs. dynamic websites and web applications. |
+                        UI/UX in web development. | Full-stack web development and its components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
