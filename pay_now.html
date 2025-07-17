@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+
+     
+/* express card  */
+
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/fab.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyUI  cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <title>Enthrall</title>
+</head>
+
+<body class="bg-primary-bg">
+
+    <!-- header section start -->
+    <header class="">
+        <!-- nav start  -->
+
+        <div class="navbar bg-base-100 shadow-md lg:max-w-6xl mx-auto rounded-2xl">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="courses.html">Courses</a>
+                            <!-- <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="mentors.html">Mentors</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <div class="">
+                        <img class="lg:w-40 md:w-40 max-md:w-32" src="images/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="courses.html">Courses</a>
+                        <!-- <details>
+                            <summary>Courses</summary>
+                            <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul>
+                        </details> -->
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow lg:py-3 md:py-3 md:px-2 max-md:py-3 lg:px-6 max-md:px-3 rounded-lg max-md:text-sm">
+                    Login/Signup <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- nav end  -->
+
+    <!-- header section end -->
+
+    <!-- pay now  -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-lg font-semibold mb-6">Complete your payment</h2>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- Payment Details (60%) -->
+            <div class="lg:w-[60%] w-full bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-lg font-semibold mb-4">Payments Details</h3>
+
+                <div class="flex gap-4 items-center mb-4">
+                    <img src="images/course-detail-img.png" alt="Course Image"
+                        class="w-20 h-20 rounded-md object-cover">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 text-base">Software Engineering</h4>
+                        <p class="text-red-500 text-sm font-medium">Bootcamp</p>
+                    </div>
+                </div>
+
+                <!-- Pay Option -->
+                <div class="mb-4">
+                    <span class="text-sm text-gray-600">Pay Option:</span>
+                    <span class="bg-gray-200 text-sm font-medium px-2 py-1 rounded ml-2">Upfront</span>
+                    <a href="#" class="text-green-500 text-sm ml-2">Edit</a>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Cost Breakdown -->
+                <div class="space-y-2 text-sm text-gray-700">
+                    <div class="flex justify-between">
+                        <span>Course Fee</span>
+                        <span>$ 5,000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Upfront Discount</span>
+                        <span>$ 1,000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Discount With <a href="#" class="text-green-600 underline">Promo Code</a></span>
+                        <span>$ 1,000</span>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between font-semibold text-gray-900 text-base pt-2">
+                        <span>Total Pay</span>
+                        <span>$ 3,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods (40%) -->
+            <div class="lg:w-[40%] w-full bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-lg font-semibold mb-4">Payments Methods</h3>
+                <ul class="space-y-3 text-sm text-gray-800">
+                    <li class="flex justify-between items-center bg-gray-50 px-4 rounded">
+                        <span>Credit and Debit Card</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                    <li class="flex justify-between items-center bg-gray-50 px-4  rounded">
+                        <span>Zelle (scan to pay)</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                    <li class="flex justify-between items-center bg-gray-50 px-4 rounded">
+                        <span>Paypal</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                    <li class="flex justify-between items-center bg-gray-50 px-4 rounded">
+                        <span>Venmo (scan to pay)</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                    <li class="flex justify-between items-center bg-gray-50 px-4 rounded">
+                        <span>Mail check to</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                    <li class="flex justify-between items-center bg-gray-50 px-4 rounded">
+                        <span>Wire Transfer</span>
+                        <img class="w-10" src="images/master-card.png" alt="Card">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="max-w-6xl mx-auto px-4 py-6 bg-white rounded-xl shadow-sm mt-8">
+            <!-- Contact and Total -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-sm md:text-base mb-6 gap-2 md:gap-0">
+                <div class="text-gray-600">
+                    <span class="font-semibold">Call if necessary:</span>
+                    <span class="text-orange-600 font-bold">016 00000000</span>
+                    <span class="text-gray-400 text-xs md:text-sm ml-2">(Note: 10 am to 10 pm)</span>
+                </div>
+                <div class="text-gray-600">
+                    <span class="font-semibold">Total Payable Amount:</span>
+                    <span class="text-orange-600 font-bold">$ 3,000</span>
+                </div>
+            </div>
+
+            <!-- Payment Button -->
+            <button
+                class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-lg transition-all duration-200">
+                Payment Now
+            </button>
+        </div>
+
+    </section>
+
+    <!-- pay now end -->
+
+
+    <!-- Want To Get In Touch start  -->
+
+    <section class="py-14 lg:my-20">
+        <div class="max-w-6xl max-md:p-4 md:p-4 h-auto mx-auto bg-white rounded-xl">
+            <div class="grid grid-cols-12 gap-5 lg:p-10 max-md:p-3 ">
+
+                <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12 h-full flex">
+                    <div class=" ">
+                        <h1 class="lg:text-4xl max-md:text-2xl font-bold text-dark-gray leading-10 my-5">
+                            Want To Get <br> In Touch?
+                        </h1>
+                        <p class="text-sm font-light">We'd Love To Hear From You. You Can Reach Us <br> Via The
+                            Following Contact Details.</p>
+
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-6 md:col-span-6 max-md:col-span-12 h-full  flex flex-col items-center justify-center space-y-5">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Name" id="">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Email" id="">
+                    <input class="border-0 bg-primary-bg w-full h-20 px-5 py-3 rounded-lg  outline-none" type="text"
+                        name="" placeholder="Message" id="">
+                    <div class=" mt-2 w-full">
+                        <button
+                            class="w-full bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded transition duration-300">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Want To Get In Touch end  -->
+    <!-- footer  -->
+    <footer class="">
+
+        <section class="bg-dark-gray py-14">
+            <div class="max-w-6xl max-md:p-4 md:p-4 mx-auto">
+                <div class="grid grid-cols-12 h-80 gap-5">
+
+                    <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col justify-around  ">
+                            <div class="">
+                                <img class="w-60" src="images/white-logo.png" alt="">
+                            </div>
+                            <div class="text-white">
+                                <p><i class="fa-solid fa-phone-volume text-yellow"></i>&nbsp; +1929-301-6028 </p>
+                                <p><i class="fa-solid fa-envelope text-yellow"></i> &nbsp;info@enthrallit.com</p>
+                                <p><i class="fa-solid fa-briefcase text-yellow"></i>&nbsp; 625W 57th St, New York, NY
+                                    10019
+                                </p>
+                            </div>
+                            <div class="">
+                                <i class="text-white mx-3 text-2xl fa-brands fa-instagram"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                <i class="text-white mx-3 text-2xl fa-solid fa-envelope"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col items-end max-md:items-start justify-around  ">
+                            <nav>
+                                <ul
+                                    class="flex items-center lg:gap-5 md:gap-2 max-md:gap-2 text-white font-normal max-md:text-[10px]">
+                                    <a href="">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="courses.html">
+                                        <li>Courses</li>
+                                    </a>
+                                    <a href="events.html">
+                                        <li>Events</li>
+                                    </a>
+                                    <a href="mentors.html">
+                                        <li>Mentors</li>
+                                    </a>
+                                    <a href="alumni.html">
+                                        <li>Alumni</li>
+                                    </a>
+                                    <a href="payments.html">
+                                        <li>Payments</li>
+                                    </a>
+                                    <a href="about.html">
+                                        <li>About</li>
+                                    </a>
+                                </ul>
+                            </nav>
+                            <div class=""></div>
+                            <div class="">
+                                <p class="text-yellow"> <span>copyright @Entrall IT 2025</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+</body>
+
+</html>
