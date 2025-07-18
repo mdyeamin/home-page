@@ -3415,7 +3415,7 @@
     <!-- Frequently Asked Questions start  -->
     <section class=" py-12 p-4">
         <div class="max-w-3xl mx-auto md:py-20">
-            <h2 class="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <h2 class="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
 
             <div x-data="{ open: 1 }" class="space-y-4">
                 <!-- Question 1 -->
@@ -3600,6 +3600,197 @@
     </section>
 
     <!-- Frequently Asked Questions end -->
+
+
+    <!-- how to pay start  -->
+    <section class="bg-yellow py-12 p-4">
+        <div class="max-w-3xl mx-auto md:py-20">
+            <h2 class="text-4xl font-bold text-center mb-8">How To Pay</h2>
+
+            <div x-data="{ open: 1 }" class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 1 ? open = null : open = 1"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        What is an online coding bootcamp?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 1">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 1">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 1" x-transition class="mt-2 text-gray-700">
+                        A coding bootcamp is a complete, focused, practical job training program. It's career-focused
+                        vocational education for the digital age. Unlike MOOCs and coding education platforms, coding
+                        bootcamps teach you a complete set of skills and knowhow to perform a job.
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 2 ? open = null : open = 2"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        Is software engineering bootcamp worth it?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 2">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 2">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 2" x-transition class="mt-2 text-gray-700">
+                        Yes! It is a faster, more intensive path to career change and practical skills compared to
+                        traditional education.
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 3 ? open = null : open = 3"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        Can a bootcamp make you a software engineer?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 3">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 3">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 3" x-transition class="mt-2 text-gray-700">
+                        Yes, if you dedicate yourself to the curriculum, projects, and career support.
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 4 ? open = null : open = 4"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 4">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 4">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 4" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 5 ? open = null : open = 5"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 5">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 5">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 5" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 6 ? open = null : open = 6"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 6">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 6">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 6" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 7 ? open = null : open = 7"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 7">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 7">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 7" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+                <!-- Question 8 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 8 ? open = null : open = 8"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 8">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 8">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 8" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+                <!-- Question 9 -->
+                <div class="bg-white rounded-lg shadow px-4 py-6">
+                    <button @click="open === 9 ? open = null : open = 9"
+                        class="w-full flex justify-between items-center text-left font-semibold">
+                        How does the admission process work?
+                        <span
+                            class="w-6 h-6 flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-400 text-black">
+                            <template x-if="open === 9">
+                                <span>−</span>
+                            </template>
+                            <template x-if="open !== 9">
+                                <span>+</span>
+                            </template>
+                        </span>
+                    </button>
+                    <div x-show="open === 9" x-transition class="mt-2 text-gray-700">
+                        You apply online, go through a short interview, and if accepted you can start the program.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how to pay end -->
+
 
     <!-- Want To Get In Touch start  -->
 
