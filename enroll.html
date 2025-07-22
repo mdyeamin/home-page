@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+
+     
+/* express card  */
+
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/fab.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- daisyUI  cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <title>Enthrall</title>
+</head>
+
+<body class="bg-primary-bg">
+
+    <!-- header section start -->
+    <header class="">
+        <!-- nav start  -->
+
+        <div class="navbar bg-base-100 shadow-md lg:max-w-6xl mx-auto rounded-2xl">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="courses.html">Courses</a>
+                            <!-- <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="mentors.html">Mentors</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <div class="">
+                        <img class="lg:w-40 md:w-40 max-md:w-32" src="images/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="courses.html">Courses</a>
+                        <!-- <details>
+                            <summary>Courses</summary>
+                            <ul class="p-2">
+                                <li><a>JavaScript</a></li>
+                                <li><a>Python</a></li>
+                                <li><a>Automation</a></li>
+                            </ul>
+                        </details> -->
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow lg:py-3 md:py-3 md:px-2 max-md:py-3 lg:px-6 max-md:px-3 rounded-lg max-md:text-sm">
+                    Login/Signup <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                </button>
+            </div>
+        </div>
+        <!-- nav end  -->
+    </header>
+    <!-- header section end -->
+<!-- login form  -->
+
+<div class="max-w-2xl mx-auto p-6 bg-white shadow-xl rounded-xl mt-10">
+  <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Create Account</h2>
+  <form class="space-y-5">
+    <!-- Full Name -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+      <input type="text" placeholder="Your full name"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+      <input type="email" placeholder="you@example.com"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+    </div>
+
+    <!-- Password -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+      <input type="password" placeholder="********"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+    </div>
+
+    <!-- Phone -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+      <input type="tel" placeholder="01XXXXXXXXX"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+    </div>
+
+    <!-- Select Course -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Select Course</label>
+      <select
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+        <option disabled selected>-- Select a course --</option>
+        <option>Software Engineering Bootcamp</option>
+        <option>Web Development</option>
+        <option>Python for Beginners</option>
+        <option>UI/UX Design</option>
+      </select>
+    </div>
+
+    <!-- Captcha -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Enter Captcha Code</label>
+      <div class="flex items-center gap-4">
+          <div class="px-4 py-2 bg-gray-100 rounded-lg font-mono text-lg tracking-widest select-none">8XK7L</div>
+        <input type="text" placeholder="Enter code"
+          class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-300 focus:outline-none">
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="pt-4">
+      <button
+        class="w-full bg-yellow-400 hover:bg-yellow-500 transition-colors text-white font-semibold py-2 rounded-lg shadow-md">
+        Create Account
+      </button>
+    </div>
+  </form>
+</div>
+
+
+    <!-- Want To Get In Touch start  -->
+
+    <section class="py-14 lg:my-20">
+        <div class="max-w-6xl max-md:p-4 md:p-4 h-auto mx-auto bg-white rounded-xl">
+            <div class="grid grid-cols-12 gap-5 lg:p-10 max-md:p-3 ">
+
+                <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12 h-full flex">
+                    <div class=" ">
+                        <h1 class="lg:text-4xl max-md:text-2xl font-bold text-dark-gray leading-10 my-5">
+                            Want To Get <br> In Touch?
+                        </h1>
+                        <p class="text-sm font-light">We'd Love To Hear From You. You Can Reach Us <br> Via The
+                            Following Contact Details.</p>
+
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-6 md:col-span-6 max-md:col-span-12 h-full  flex flex-col items-center justify-center space-y-5">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Name" id="">
+                    <input class="border-0 bg-primary-bg w-full px-5 py-3 rounded-lg outline-none " type="text" name=""
+                        placeholder="Email" id="">
+                    <input class="border-0 bg-primary-bg w-full h-20 px-5 py-3 rounded-lg  outline-none" type="text"
+                        name="" placeholder="Message" id="">
+                    <div class=" mt-2 w-full">
+                        <button
+                            class="w-full bg-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-2 px-6 rounded transition duration-300">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Want To Get In Touch end  -->
+    <!-- footer  -->
+    <footer class="">
+
+        <section class="bg-dark-gray py-14">
+            <div class="max-w-6xl max-md:p-4 md:p-4 mx-auto">
+                <div class="grid grid-cols-12 h-80 gap-5">
+
+                    <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col justify-around  ">
+                            <div class="">
+                                <img class="w-60" src="images/white-logo.png" alt="">
+                            </div>
+                            <div class="text-white">
+                                <p><i class="fa-solid fa-phone-volume text-yellow"></i>&nbsp; +1929-301-6028 </p>
+                                <p><i class="fa-solid fa-envelope text-yellow"></i> &nbsp;info@enthrallit.com</p>
+                                <p><i class="fa-solid fa-briefcase text-yellow"></i>&nbsp; 625W 57th St, New York, NY
+                                    10019
+                                </p>
+                            </div>
+                            <div class="">
+                                <i class="text-white mx-3 text-2xl fa-brands fa-instagram"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                <i class="text-white mx-3 text-2xl fa-solid fa-envelope"></i>
+                                <i class="text-white mx-3 text-2xl fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 md:col-span-6 max-md:col-span-12">
+                        <div class=" flex h-full flex-col items-end max-md:items-start justify-around  ">
+                            <nav>
+                                <ul
+                                    class="flex items-center lg:gap-5 md:gap-2 max-md:gap-2 text-white font-normal max-md:text-[10px]">
+                                    <a href="">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="courses.html">
+                                        <li>Courses</li>
+                                    </a>
+                                    <a href="events.html">
+                                        <li>Events</li>
+                                    </a>
+                                    <a href="mentors.html">
+                                        <li>Mentors</li>
+                                    </a>
+                                    <a href="alumni.html">
+                                        <li>Alumni</li>
+                                    </a>
+                                    <a href="payments.html">
+                                        <li>Payments</li>
+                                    </a>
+                                    <a href="about.html">
+                                        <li>About</li>
+                                    </a>
+                                </ul>
+                            </nav>
+                            <div class=""></div>
+                            <div class="">
+                                <p class="text-yellow"> <span>copyright @Entrall IT 2025</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
