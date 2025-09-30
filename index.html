@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style type="text/tailwindcss">
         @theme {
         --color-clifford: #da373d;
@@ -123,7 +127,7 @@
                             <div class="flex gap-x-5 items-center mt-5">
                                 <button
                                     class="bg-yellow border border-yellow hover:bg-dark-gray text-dark-gray font-semibold hover:text-yellow py-1.5 px-5 text-sm rounded-lg transition">
-                                    Enroll Now 
+                                    Enroll Now
                                 </button>
 
                                 <button
@@ -388,117 +392,188 @@
 
             <!-- Guided By Experts. cards start  -->
             <div class="">
-                <div class="grid grid-cols-12 gap-5 mt-10">
-                    <!-- Guided card 1 -->
-                    <div
-                        class="relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
-                        <div class="h-[460px] w-[367] bg-transparent rounded-lg shadow-lg ">
-                            <div class="">
-                                <div class=" ">
-                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
-                                        src="images/tofayelvai.png" alt="Web Development">
-                                    <div
-                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
-                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
-                                    </div>
-                                    <div class="content text-white text-center rounded-lg">
-                                        <div class="">
-                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
-                                        </div>
-                                        <div class="my-5">
-                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
-                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="">
+                    <div class="swiper mySwiper" data-breakpoints='{
+      "320":{"slidesPerView":2},
+      "768":{"slidesPerView":3},
+      "1200":{"slidesPerView":4}}'>
 
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <!-- Guided card 1 -->
+                            <div
+                                class="swiper-slide relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                                <div class="h-[340px] w-[367] bg-transparent rounded-lg shadow-lg ">
+                                    <div class="w-full h-full">
+                                        <div class=" ">
+                                            <img class="h-full w-full rounded-lg mx-auto object-cover "
+                                                src="images/tofayelvai.png" alt="Web Development">
+
+                                            <div class="content text-white text-center rounded-lg">
+                                                <div class="">
+                                                    <h3 class="text-sm font-semibold">Mohammad Tofael K Sharkar</h3>
+                                                    <p class=" expert-title">Chief Instructor</p>
+                                                </div>
+                                                <div class="my-3">
+                                                    <i class="mx-1 text-xs fa-solid fa-phone"></i>
+                                                    <i class="mx-1 text-xs fa-solid fa-envelope"></i>
+                                                    <i class="mx-1 text-xs fa-brands fa-linkedin-in"></i>
+                                                    <i class="mx-1 text-xs fa-brands fa-facebook-f"></i>
+                                                    <i class="mx-1 text-xs fa-solid fa-envelope"></i>
+                                                    <i class="mx-1 text-xs fa-brands fa-x-twitter"></i>
+                                                    <i class="mx-1 text-xs fa-solid fa-circle-info"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
 
-                        </div>
-                    </div>
+                            <!-- Slide 2 -->
+                            <!-- Guided card 2 -->
+                            <div
+                                class="swiper-slide relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                                <div class="h-[340px] w-[367] bg-transparent rounded-lg shadow-lg ">
+                                    <div class="w-full h-full">
+                                        <div class=" ">
+                                            <img class="h-full w-full rounded-b-lg mx-auto object-cover rounded-2xl"
+                                                src="images/tofayelvai.png" alt="Web Development">
 
-                    <!-- Guided card 2 -->
-                    <div
-                        class="relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
-                        <div class="h-[460px] w-[367] bg-transparent rounded-lg shadow-lg ">
-                            <div class="">
-                                <div class=" ">
-                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
-                                        src="images/tofayelvai.png" alt="Web Development">
-                                    <div
-                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
-                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
-                                    </div>
-                                    <div class="content text-white text-center rounded-lg">
-                                        <div class="">
-                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                            <div class="content text-white text-center rounded-lg">
+                                                <div class="">
+                                                    <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                                    <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                                </div>
+                                                <div class="my-5">
+                                                    <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                                    <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="my-5">
-                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
-                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
-                                        </div>
+
                                     </div>
+
                                 </div>
-
                             </div>
 
-                        </div>
-                    </div>
+                            <!-- Slide 3 -->
+                            <!-- Guided card 3 -->
+                            <div
+                                class="swiper-slide relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                                <div class="h-[340px] w-[367] bg-transparent rounded-lg shadow-lg ">
+                                    <div class="w-full h-full">
+                                        <div class=" ">
+                                            <img class="h-full w-full rounded-b-lg mx-auto object-cover rounded-2xl"
+                                                src="images/tofayelvai.png" alt="Web Development">
 
-                    <!-- Guided card 3 -->
-                    <div
-                        class="relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
-                        <div class="h-[460px] w-[367] bg-transparent rounded-lg shadow-lg ">
-                            <div class="">
-                                <div class=" ">
-                                    <img class="h-full w-full mx-auto object-cover rounded-2xl"
-                                        src="images/tofayelvai.png" alt="Web Development">
-                                    <div
-                                        class="guider-name absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-gray to-transparent p-4 rounded-b-2xl text-white text-center hover:transition-all duration-300">
-                                        <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                        <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
-                                    </div>
-                                    <div class="content text-white text-center rounded-lg">
-                                        <div class="">
-                                            <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
-                                            <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                            <div class="content text-white text-center rounded-lg">
+                                                <div class="">
+                                                    <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                                    <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                                </div>
+                                                <div class="my-5">
+                                                    <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                                    <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="my-5">
-                                            <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
-                                            <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
-                                            <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
-                                        </div>
+
                                     </div>
+
                                 </div>
-
                             </div>
 
+                            <!-- Slide 4 -->
+                            <!-- Guided card 4 -->
+                            <div
+                                class="swiper-slide relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                                <div class="h-[340px] w-[367] bg-transparent rounded-lg shadow-lg ">
+                                    <div class="w-full h-full">
+                                        <div class=" ">
+                                            <img class="h-full w-full rounded-b-lg mx-auto object-cover rounded-2xl"
+                                                src="images/tofayelvai.png" alt="Web Development">
+
+                                            <div class="content text-white text-center rounded-lg">
+                                                <div class="">
+                                                    <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                                    <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                                </div>
+                                                <div class="my-5">
+                                                    <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                                    <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <!-- Guided card 5 -->
+                            <div
+                                class="swiper-slide relative overflow-hidden lg:col-span-4 md:col-span-6 max-lg:col-span-12 gap-5 mt-10 guider-card">
+                                <div class="h-[340px] w-[367] bg-transparent rounded-lg shadow-lg ">
+                                    <div class="w-full h-full">
+                                        <div class=" ">
+                                            <img class="h-full w-full rounded-b-lg mx-auto object-cover rounded-2xl"
+                                                src="images/tofayelvai.png" alt="Web Development">
+
+                                            <div class="content text-white text-center rounded-lg">
+                                                <div class="">
+                                                    <h3 class="text-xl font-bold">Mohammad Tofael K Sharkar</h3>
+                                                    <p class="text-[#A19B9B] expert-title">Chief Instructor</p>
+                                                </div>
+                                                <div class="my-5">
+                                                    <i class="mx-3 text-2xl fa-brands fa-instagram"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-facebook-f"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-linkedin-in"></i>
+                                                    <i class="mx-3 text-2xl fa-solid fa-envelope"></i>
+                                                    <i class="mx-3 text-2xl fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Add more slides similarly -->
                         </div>
+
+                        <!-- Custom Navigation -->
+                        <div class="flex justify-center items-center mt-4 gap-4">
+                            <button
+                                class="swiper-button-prev-custom border w-10 h-10 flex items-center justify-center hover:bg-dark-gray hover:text-white duration-400 rounded-full">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button
+                                class="swiper-button-next-custom border w-10 h-10 flex items-center justify-center hover:bg-dark-gray hover:text-white duration-400 rounded-full">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
                     </div>
-
-
                 </div>
-                <div class="text-center my-5 ">
-                    <button class="bg-dark-gray text-yellow py-2 px-4 rounded-lg">
-                        <a href="mentors.html"> View More</a>
-                    </button>
-                </div>
+
             </div>
             <!-- Guided By Experts. cards end -->
             <!-- Guided By Experts. end -->
     </section>
+
+
     <!-- What Our Students Say start  -->
 
     <section class="bg-yellow py-10 my-10">
@@ -1092,6 +1167,30 @@
     <!-- footer end -->
     <script src="index.js"></script>
 
+
+    <script>
+        // handle the multiple swiper js
+        // Dynamic swiper configuration
+        document.querySelectorAll('.mySwiper').forEach((swiperEl) => {
+            const breakpoints = swiperEl.dataset.breakpoints
+                ? JSON.parse(swiperEl.dataset.breakpoints)
+                : {};
+
+            new Swiper(swiperEl, {
+                loop: true,
+                spaceBetween: 20,
+                breakpoints: breakpoints,
+                pagination: {
+                    el: swiperEl.querySelector('.swiper-pagination'),
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: swiperEl.querySelector('.swiper-button-next-custom'),
+                    prevEl: swiperEl.querySelector('.swiper-button-prev-custom')
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
